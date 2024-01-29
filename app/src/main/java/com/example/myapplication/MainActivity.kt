@@ -4,10 +4,13 @@ import android.app.NotificationManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
@@ -32,8 +35,19 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun NomberRow(numberList: Li) {
+fun NomberRow(numberList: List<Int>, isView: Int, onClickButton: () -> Unit) {
     Row (modifier = Modifier.padding(vertical = 12.dp)){
+      numberList.forEach {
+          Box(
+              modifier = Modifier
+                  .padding(horizontal = 5.dp)
+                  .height(100.dp)
+                  .width(110.dp)
+          ){
+              if (){
 
+              }
+          }
+      }
     }
 }
